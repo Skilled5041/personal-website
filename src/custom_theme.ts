@@ -97,6 +97,5 @@ export const custom_theme: CustomThemeConfig = {
 		"--color-surface-700": "25 28 37", // #191c25
 		"--color-surface-800": "20 22 29", // #14161d
 		"--color-surface-900": "16 18 24" // #101218
-
 	}
 };
