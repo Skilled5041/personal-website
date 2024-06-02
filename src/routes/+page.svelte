@@ -2,6 +2,21 @@
 	import Scene from "$lib/components/Scene.svelte";
 	import { Canvas } from "@threlte/core";
 	import SkillCard from "$lib/components/SkillCard.svelte";
+
+	let carouselElement: HTMLDivElement;
+
+	function multiColumnLeft(): void {
+		let x = carouselElement.scrollWidth;
+		if (carouselElement.scrollLeft !== 0) x = carouselElement.scrollLeft - carouselElement.clientWidth;
+		carouselElement.scroll(x, 0);
+	}
+
+	function multiColumnRight(): void {
+		let x = 0;
+		// -1 is used because different browsers use different methods to round scrollWidth pixels.
+		if (carouselElement.scrollLeft < carouselElement.scrollWidth - carouselElement.clientWidth - 1) x = carouselElement.scrollLeft + carouselElement.clientWidth;
+		carouselElement.scroll(x, 0);
+	}
 </script>
 
 <div class="flex">
@@ -19,9 +34,25 @@
 </div>
 <div class="m-24 card variant-ghost py-24">
 	<h1 class="text-6xl text-center pb-12">My Skills</h1>
-	<div class="flex place-content-evenly">
-		<SkillCard logo="/logos/svelte.png" text="Svelte"/>
-		<SkillCard logo="/logos/typescript.png" text="Typescript"/>
+	<div class="grid grid-cols-[auto_1fr_auto] gap-4 items-center px-24">
+		<button type="button" class="btn-icon variant-filled" on:click={multiColumnLeft}>
+			<i class="fa-solid fa-arrow-left" />
+		</button>
+		<div bind:this={carouselElement} class="snap-x snap-mandatory scroll-smooth flex gap-2 p-2 overflow-x-auto">
+			<SkillCard logo="/logos/svelte.png" text="Svelte" />
+			<SkillCard logo="/logos/typescript.png" text="Typescript" />
+			<SkillCard logo="/logos/javascript.png" text="Javascript" />
+			<SkillCard logo="/logos/python.png" text="Python" />
+			<SkillCard logo="/logos/java.png" text="Java" />
+			<SkillCard logo="/logos/linux.png" text="Linux" />
+			<SkillCard logo="/logos/supabase.png" text="Supabase" />
+			<SkillCard logo="/logos/git.png" text="Git" />
+			<SkillCard logo="/logos/postgresql.png" text="PostgreSQL" />
+			<SkillCard logo="/logos/cpp.png" text="C++" />
+		</div>
+		<button type="button" class="btn-icon variant-filled" on:click={multiColumnRight}>
+			<i class="fa-solid fa-arrow-right" />
+		</button>
 	</div>
 </div>
 

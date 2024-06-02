@@ -3,7 +3,17 @@
 	export let logo: string;
 </script>
 
-<div class="card variant-ghost-primary w-44 px-12 py-12 flex flex-col items-center gap-4">
+<div class="card variant-ghost-primary w-44 px-12 py-12 flex flex-col items-center gap-4 animation">
 	<img src={logo} alt="logo" class="object-contain h-20 w-full" />
 	<h1 class="text-2xl">{text}</h1>
 </div>
+
+<style>
+	.animation {
+		transition: all 0.2s;
+	}
+
+	.animation:hover {
+		transform: scale(1.05) rotateX(5deg) rotateY(5deg) perspective(1000px);
+	}
+</style>
