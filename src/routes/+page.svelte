@@ -89,7 +89,7 @@
 		<a href="https://www.linkedin.com/in/aaron-ye-7574872a0/" class="social-icon">
 			<Icon icon="devicon-plain:linkedin" />
 		</a>
-		<a href="https://www.linkedin.com/in/aaron-ye-7574872a0/" class="social-icon">
+		<a href="https://github.com/Skilled5041" class="social-icon">
 			<Icon icon="bi:github" />
 		</a>
 		<a href="mailto:aaronye1001@gmail.com" class="social-icon">
