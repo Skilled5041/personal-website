@@ -45,8 +45,6 @@
     "@threlte/extras": "^8.11.2",
     "@types/three": "^0.165.0",
     "highlight.js": "11.9.0",
-    "postprocessing": "^6.35.4",
-    "three": "^0.165.0",
-    "three-mesh-bvh": "^0.7.4"
+    "three": "^0.165.0"
   }
 }
