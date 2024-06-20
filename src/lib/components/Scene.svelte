@@ -49,22 +49,19 @@
 	makeDefault
 	position={[10, 10, 10]}
 	on:create={({ ref }) => {
-    	ref.lookAt(0, 1, 0);
- 	}}
+		ref.lookAt(0, 1, 0);
+	}}
 />
 
 <T.DirectionalLight position={[0, 10, 10]} intensity={5} />
 <T.AmbientLight intensity={1} />
 
-<T.Mesh
-	rotation.y={-rotation}
-	rotation.x={-rotation}
-	scale={$scale}>
+<T.Mesh rotation.y={-rotation} rotation.x={-rotation} scale={$scale}>
 	<MeshLineGeometry {points} />
 	<MeshLineMaterial
 		width={width / 2}
 		{dashOffset}
-		dashArray={dashArray}
+		{dashArray}
 		dashRatio={0.5}
 		color={0x8f71d1}
 		opacity={lineOpacity}
@@ -81,6 +78,6 @@
 	on:pointerleave={onPointerLeave}
 >
 	<T.OctahedronGeometry args={[2, 0]} />
-	<T.MeshStandardMaterial color={0x4B3A70}/>
-	<Edges color="white"/>
+	<T.MeshStandardMaterial color={0x4b3a70} />
+	<Edges color="white" />
 </T.Mesh>
