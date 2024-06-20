@@ -24,6 +24,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
     "autoprefixer": "10.4.19",
+    "drizzle-kit": "^0.22.7",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.35.1",
@@ -41,9 +42,11 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "1.6.5",
+    "@neondatabase/serverless": "^0.9.3",
     "@threlte/core": "^7.3.0",
     "@threlte/extras": "^8.11.2",
     "@types/three": "^0.165.0",
+    "drizzle-orm": "^0.31.2",
     "highlight.js": "11.9.0",
     "three": "^0.165.0"
   }
