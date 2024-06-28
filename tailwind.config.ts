@@ -9,6 +9,8 @@ export default {
 	darkMode: "class",
 	content: [
 		"./src/**/*.{html,js,svelte,ts}",
+		"./node_modules/svelte-ux/**/*.{svelte,js}",
+		"./node_modules/layerchart/**/*.{svelte,js}",
 		join(require.resolve("@skeletonlabs/skeleton"), "../**/*.{html,js,svelte,ts}")
 	],
 	theme: {

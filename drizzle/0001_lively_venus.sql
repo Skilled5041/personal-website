@@ -1,0 +1,1 @@
+ALTER TABLE "visit_count" ADD CONSTRAINT "visit_count_date_unique" UNIQUE("date");

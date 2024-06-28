@@ -1,6 +1,6 @@
 {
-	"id": "3fbab218-7463-498e-b4aa-d55b4fde8de7",
-	"prevId": "00000000-0000-0000-0000-000000000000",
+	"id": "afc475ea-cdfa-4a5b-933d-d19c9ea57fe8",
+	"prevId": "3fbab218-7463-498e-b4aa-d55b4fde8de7",
 	"version": "7",
 	"dialect": "postgresql",
 	"tables": {
@@ -31,7 +31,13 @@
 			"indexes": {},
 			"foreignKeys": {},
 			"compositePrimaryKeys": {},
-			"uniqueConstraints": {}
+			"uniqueConstraints": {
+				"visit_count_date_unique": {
+					"name": "visit_count_date_unique",
+					"nullsNotDistinct": false,
+					"columns": ["date"]
+				}
+			}
 		}
 	},
 	"enums": {},

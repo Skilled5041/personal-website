@@ -34,9 +34,10 @@
 	<nav class="flex justify-between p-4 bg-surface-800 sticky top-0 left-0 z-50">
 		<a
 			class="text-xl md:text-2xl lg:text-3xl fancy-text pl-2 lg:pl-4"
-			href="#top"
-			on:click|preventDefault={scrollIntoView}>Aaron Ye</a
+			href="/"
 		>
+			Aaron Ye
+		</a>
 		<div class="flex pr-2 lg:pr-4 gap-2">
 			<a
 				class="btn btn-sm md:btn-md variant-ghost-surface icons flex gap-1"
@@ -96,52 +97,52 @@
 </div>
 
 <style>
-	:global(.icons) {
-		font-size: 12px;
-	}
+    :global(.icons) {
+        font-size: 12px;
+    }
 
-	:global(.contact-icon) {
-		font-size: 24px;
-	}
+    :global(.contact-icon) {
+        font-size: 24px;
+    }
 
-	@media (max-width: 767px) {
-		.copyright-br {
-			display: block;
-		}
+    @media (max-width: 767px) {
+        .copyright-br {
+            display: block;
+        }
 
-		.vdiv {
-			display: block;
-		}
-	}
+        .vdiv {
+            display: block;
+        }
+    }
 
-	@media (min-width: 768px) {
-		div :global(.contact-icon) {
-			font-size: 32px;
-		}
+    @media (min-width: 768px) {
+        div :global(.contact-icon) {
+            font-size: 32px;
+        }
 
-		div :global(.icons) {
-			font-size: 18px;
-		}
-	}
+        div :global(.icons) {
+            font-size: 18px;
+        }
+    }
 
-	@media (min-width: 1024px) {
-		div :global(.contact-icon) {
-			font-size: 36px;
-		}
+    @media (min-width: 1024px) {
+        div :global(.contact-icon) {
+            font-size: 36px;
+        }
 
-		div :global(.icons) {
-			font-size: 22px;
-		}
-	}
+        div :global(.icons) {
+            font-size: 22px;
+        }
+    }
 
-	.fancy-text {
-		font-family: "Hertine", cursive;
-	}
+    .fancy-text {
+        font-family: "Hertine", cursive;
+    }
 
-	.layout {
-		min-height: 100vh;
-		margin: 0;
-		display: grid;
-		grid-template-rows: auto 1fr auto;
-	}
+    .layout {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
 </style>
