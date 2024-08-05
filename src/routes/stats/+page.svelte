@@ -30,14 +30,19 @@
 			let:tooltip
 		>
 			<Svg>
+				<Axis placement="bottom" grid={{class: "opacity-15 stroke-primary-500"}}
+					  rule={{class: "stroke-primary-900"}}
+				/>
+				<Axis placement="left" grid={{class: "opacity-15 stroke-primary-500"}} />
 				<LinearGradient class="bg-gradient-to-b from-secondary-500 to-surface-900" vertical let:url>
-					<Area line={{ class: "stroke-[6] stroke-secondary-500 opacity-20 bg-gradient-to-b from-secondary-500 to-transparent" }} fill={url} fill-opacity="50%"/>
+					<Area
+						line={{ class: "stroke-[6] stroke-secondary-500 opacity-20 bg-gradient-to-b from-secondary-500 to-transparent" }}
+						fill={url} fill-opacity="50%" />
 					<RectClipPath x={0} y={0} width={tooltip.data ? tooltip.x : width} {height} spring>
 						<Area line={{ class: "stroke-[6] stroke-secondary-500" }} fill={url} />
 					</RectClipPath>
 				</LinearGradient>
 				<Highlight points lines={{ class: "stroke-secondary-400 [stroke-dasharray:unset]" }} />
-				<Axis placement="bottom" />
 			</Svg>
 			<Tooltip
 				y={48}
@@ -53,7 +58,7 @@
 				x="data"
 				y={height + padding.top + 2}
 				anchor="top"
-				variant=" "
+				variant="default"
 				class="text-sm font-semibold bg-primary text-primary-content leading-3 px-2 py-1 rounded whitespace-nowrap"
 				let:data
 			>

@@ -76,7 +76,7 @@
 	<footer
 		class="m-2 pt-4 text-center items-center flex justify-between border-t-2 border-tertiary-800"
 	>
-		<h2 class="text-xs pl-2 lg:pl-8 md:text-lg">Made with Svelte</h2>
+		<a class="text-xs pl-2 lg:pl-8 md:text-lg" href="/stats">Stats</a>
 		<span class="divider-vertical h-full hidden vdiv" />
 		<h2 class="text-xs md:text-lg">
 			Copyright © <br class="hidden copyright-br" />2024 Aaron Ye
