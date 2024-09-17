@@ -1,0 +1,152 @@
+\documentclass[a4paper,11pt,oneside,final]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\vspace{-1mm}
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Aaron Ye}}\\
+	Markham, Ontario $\cdot$ aaronye1001@gmail.com $\cdot$ 647-617-0420 $\cdot$ https://aaronye.dev\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Markville Secondary School}\hfill Markham, Ontario\\
+Ontario Secondary School Diploma, High School Student \hfill Aug 2021 - Jun 2025\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Teaching Assistant} \hfill Virtual\\
+\textit{Triway Education} \hfill Dec 2023 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Conducted personalized teaching sessions for groups of one to four for math and computer science.
+	\item Adapted teaching methods to suit the learning styles and needs of each student or group.
+\end{itemize}
+
+%==== Volunteer Experience ====%
+\header{Volunteer Experience}
+\vspace{1mm}
+
+\textbf{Summer Camp Assistant} \hfill Markham, Ontario\\
+\textit{Lorvale Academy} \hfill Aug 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Kept all camp and work areas tidy, clean, and organised.
+	\item Supervised and assisted up to  12 campers with their activities and work.
+	\item Resolved problems and conflicts between campers.
+\end{itemize}
+
+\vspace{1mm}
+
+\textbf{Mathematics Teacher} \hfill Virtual\\
+\textit{Stem Is Fun} \hfill Jan 2023 - Apr 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Taught lessons to develop maths skills of children in up to groups of 6.
+	\item Prepared and implement lesson plans covering required topics.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Technical Skills: Fullstack Development, Java, Python, Javascript / NextJS/React, SvelteKit,\\ Git, SQL, Linux\\
+\end{tabular}
+\vspace{4mm}
+
+\header{Extracurricular Activities}
+{\textbf{Co-founder and Co-president of Markville  Dev-Hack Club}} \hfill Sep 2024 - Present\\
+\ \\
+\vspace*{2mm}
+{\textbf{EurekaHACKS Organiser}} \hfill Aug 2024 - Present\\
+\ \\
+\vspace*{2mm}
+{\textbf{Executive of the Markville Chemistry-Neuro Club}} \hfill Nov 2023 - Present\\
+Organised meetings and taught lessons and labs to members.\\
+\vspace*{2mm}
+\vspace*{4mm}
+
+\header{Awards}
+\textbf{Seven-time hackathon winner} \hfill \\
+Notable wins: \textbf{Hack the North 2024 Finalist}, NSBEHacks 2024 Runner Up, EurekaHACKS 2024 First Place, STEMist Hacks 2024 First Place, FOCUS Hacks 2024 First Place
+\vspace*{4mm}
+\hfill 2023 - 2024\\
+\textbf{Canadian Computer Competition Honour Roll} \hfill CEMC at the University of Waterloo\\
+Achieved Group 4 Honour Roll for Senior Division, placed in the top $\sim$5\% \hfill Feb 2024\\
+\vspace*{4mm}
+\textbf{Canadian Computer Competition Honour Roll} \hfill CEMC at the University of Waterloo\\
+Achieved Group 3 Honour Roll for Junior Division, placed in the top $\sim$6\%  \hfill Feb 2023\\
+\vspace*{4mm}
+\textbf{Grade 10 Computer Science Award} \hfill Markville Secondary School\\
+Achieved highest mark of 100\% in ICS2U \hfill Jun 2023\\
+\vspace*{2mm}
+
+\ 
+\end{document}
